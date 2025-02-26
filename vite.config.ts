@@ -10,12 +10,12 @@ export default defineConfig({
     UnpluginSvgComponent({
       iconDir: [resolve(__dirname, 'src/assets/svgs')],
       preserveColor: resolve(__dirname, 'src/assets/svgs/preserve-color'),
-      dts: true,
-    }),
+      dts: true
+    })
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
+      '@': path.resolve(__dirname, './src')
+    }
+  }
 })
