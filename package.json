@@ -11,6 +11,7 @@
     "stylelint": "stylelint --fix src/**/*.{css,less,scss,vue,sass}"
   },
   "dependencies": {
+    "@kjgl77/datav-vue3": "^1.7.4",
     "@vueuse/core": "^12.7.0",
     "autofit.js": "^3.2.4",
     "normalize.css": "^8.0.1",
