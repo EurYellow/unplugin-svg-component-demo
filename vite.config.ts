@@ -1,5 +1,6 @@
 import { resolve } from 'node:path'
 import Vue from '@vitejs/plugin-vue'
+import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Icons from 'unplugin-icons/vite'
@@ -20,6 +21,7 @@ export default defineConfig({
   },
   plugins: [
     Vue(),
+    UnoCSS(),
     UnpluginSvgComponent({
       iconDir: [resolve(__dirname, 'src/assets/svgs')],
       preserveColor: resolve(__dirname, 'src/assets/svgs/preserve-color'),

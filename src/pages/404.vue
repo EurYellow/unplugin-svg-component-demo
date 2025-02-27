@@ -14,7 +14,11 @@ defineOptions({
       </template>
 
       <template #title>
-        <span class="m-4">4042</span>
+        <div class="mt-4 w-full flex items-center justify-center gap-x-4 p-2 text-4xl">
+          <div class="i-vscode-icons:file-type-light-pnpm" />
+          <div class="i-vscode-icons:file-type-light-pnpm?mask text-red-300" />
+        </div>
+        <span class="color-blue">404</span>
       </template>
     </el-result>
   </div>

@@ -11,18 +11,18 @@ defineOptions({
 
 <template>
   <div class="wrapper wh-full">
-    <div class="container wh-full">
+    <main class="main-container wh-full m-4">
       <titleBar style="grid-area: top;" />
       <leftArea />
       <middleArea />
       <rightArea />
-    </div>
+    </main>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .wrapper {
-  .container {
+  .main-container {
     display: grid;
     grid-template-areas:
       'top top top'

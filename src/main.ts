@@ -5,6 +5,7 @@ import router from './router'
 
 import '@/assets/styles/index.scss'
 import 'normalize.css'
+import 'virtual:uno.css'
 
 const app = createApp(App)
 

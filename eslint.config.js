@@ -1,7 +1,13 @@
 import antfu from '@antfu/eslint-config'
+// import unocss from '@unocss/eslint-config/flat'
 
 export default antfu(
   {
+
+    typescript: true,
+    vue: true,
+    unocss: true,
+
     // 使用外部格式化程序格式化 css、html、markdown 等文件
     formatters: {
       /**
