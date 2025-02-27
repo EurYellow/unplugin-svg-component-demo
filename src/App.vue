@@ -11,9 +11,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <RouterView />
+  <router-view />
 </template>
 
 <style>
-
+#app {
+  background: url('@/assets/images/body_bg.png') center no-repeat;
+  background-size: cover;
+}
 </style>

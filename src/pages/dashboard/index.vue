@@ -22,9 +22,6 @@ defineOptions({
 
 <style lang="scss" scoped>
 .wrapper {
-  background: url('@/assets/images/body_bg.png') center no-repeat;
-  background-size: cover;
-
   .container {
     display: grid;
     grid-template-areas:

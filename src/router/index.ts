@@ -1,13 +1,28 @@
 import type { RouteRecordRaw } from 'vue-router'
 import { closeProgress, startProgress } from '@/utils/progress'
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
-  { path: '/', name: 'IndexPage', component: () => import('@/pages/dashboard/index.vue') }
+  {
+    path: '/',
+    redirect: '/home'
+  },
+  {
+    path: '/home',
+    name: 'HomePage',
+    component: () => import('@/pages/dashboard/index.vue')
+  },
+  {
+    path: '/test',
+    name: 'TestPage',
+    component: () => import('@/pages/test/index.vue')
+  },
+  { path: '/:pathMatch(.*)*', component: () => import('@/pages/404.vue') }
+
 ]
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHashHistory(),
   routes
 })
 
