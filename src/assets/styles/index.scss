@@ -14,3 +14,13 @@ body,
   width: 100%;
   height: 100%;
 }
+
+@font-face {
+  font-family: 'ds-digitalbold_italic';
+  font-style: normal;
+  font-weight: bold;
+  src:
+    url('@/assets/fonts/ds-digital-webfont.woff2') format('woff2'),
+    url('@/assets/fonts/ds-digital-webfont.woff') format('woff');
+
+}

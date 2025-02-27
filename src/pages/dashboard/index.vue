@@ -35,6 +35,7 @@ defineOptions({
     grid-gap: 15px;
     justify-content: center;
     padding: 8px;
+    padding-top: 0px;
     color: #fff;
   }
 }

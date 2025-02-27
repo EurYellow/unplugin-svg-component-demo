@@ -1,19 +1,17 @@
 <script setup lang="ts">
 import autofit from 'autofit.js'
 import { onMounted } from 'vue'
-import index from './pages/dashboard/index.vue'
 
 onMounted(() => {
   autofit.init({
-    el: 'body',
+    el: '#app',
     resize: true
-
   })
 })
 </script>
 
 <template>
-  <index />
+  <RouterView />
 </template>
 
 <style>
